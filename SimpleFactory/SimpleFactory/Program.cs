@@ -18,9 +18,8 @@ namespace SimpleFactory
             Console.WriteLine("Enter an integer y");
             string y = Console.ReadLine();
 
-            ICalculatorFactory simpleFactory = new CalculatorFactory();
-            ICalculator standardCalculator = simpleFactory.CreateCalculator(CalculatorType.Standard);
-            ICalculator scentificCalculator = simpleFactory.CreateCalculator(CalculatorType.Scentific);
+            ICalculator standardCalculator = CalculatorFactory.CreateCalculator(CalculatorType.Standard);
+            ICalculator scentificCalculator = CalculatorFactory.CreateCalculator(CalculatorType.Scentific);
 
             Console.WriteLine(standardCalculator.Calculate(OperationType.Add, Convert.ToInt32(x), Convert.ToInt32(y)));
 

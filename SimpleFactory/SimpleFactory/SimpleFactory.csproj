@@ -50,7 +50,6 @@
     <Compile Include="Calculator\ScentificCalculator.cs" />
     <Compile Include="Calculator\StandardCalculator.cs" />
     <Compile Include="SimpleCalculatorFactory\CalculatorFactory.cs" />
-    <Compile Include="SimpleCalculatorFactory\ICalculatorFactory.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

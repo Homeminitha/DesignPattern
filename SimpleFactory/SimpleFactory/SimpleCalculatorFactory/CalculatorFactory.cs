@@ -8,9 +8,9 @@ using SimpleFactory.Enum;
 
 namespace SimpleFactory.SimpleCalculatorFactory
 {
-    public class CalculatorFactory: ICalculatorFactory
+    public class CalculatorFactory
     {
-        public ICalculator CreateCalculator(CalculatorType calculatorType)
+        public static ICalculator CreateCalculator(CalculatorType calculatorType)
         {
             switch (calculatorType)
             {
